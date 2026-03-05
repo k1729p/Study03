@@ -1,0 +1,3 @@
+It was changed the inspection configuration to silence this warning in many lines of code.
+In menu "Configure Inspections" / "Probable Bugs" / "Nullability Problems"
+the inspection "@NotNull/@Nullable problems" was switched off.

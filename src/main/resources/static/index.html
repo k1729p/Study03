@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Study03</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
+    <style>
+        body {
+          background-color: wheat;
+        }
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          border: 1px solid black;
+        }
+        caption {
+          padding: 5px;
+        }
+        table td {
+          padding: 3px;
+          border: 1px solid black;
+        }
+        table tr:hover td {
+          background: palegreen;
+        }
+        .col-1 {
+          width: 30%
+        }
+        .col-2 {
+          width: 70%
+        }
+    </style>
+</head>
+<body>
+<h1>Study03</h1>
+<table>
+    <tr>
+        <td class="col-1">
+            Load sample dataset
+        </td>
+        <td class="col-2">
+            <a href="/loadSampleDataset">/loadSampleDataset</a>
+        </td>
+    </tr>
+</table>
+<p>
+<table>
+    <tr>
+        <td class="col-1">
+            Get all <b>departments</b>
+        </td>
+        <td class="col-2">
+            <a href="/company/departments">/company/departments</a><br/>
+        </td>
+    </tr>
+    <tr>
+        <td class="col-1">
+            Get the <b>department</b> by department key
+        </td>
+        <td class="col-2">
+            <a href="/company/departments/K-DEP-1">/company/departments/K-DEP-1</a>
+        </td>
+    </tr>
+    <tr>
+        <td class="col-1">
+            Get the <b>employee</b> by department key and<br/>
+            employee names (the first name and the last name)
+        </td>
+        <td class="col-2">
+            <a href="/company/departments/K-DEP-1/employees?firstName=EF-Name-101&lastName=EL-Name-101">
+                /company/departments/K-DEP-1/employees?firstName=EF-Name-101&amp;lastName=EL-Name-101</a>
+        </td>
+    </tr>
+</table>
+<p>
+<table>
+    <tr>
+        <td class="col-1">
+            Get all <b>teams</b> and scores
+        </td>
+        <td class="col-2">
+            <a href="/company/teams">/company/teams/</a><br/>
+        </td>
+    </tr>
+    <tr>
+        <td class="col-1">
+            Get the <b>teams</b> and scores by ranges<br/>
+            Ranged by score
+        </td>
+        <td class="col-2">
+            <a href="/company/teams/range?rangeFrom=1&amp;rangeTo=3">/company/teams/range?rangeFrom=1&amp;rangeTo=3</a><br/>
+        </td>
+    </tr>
+    <tr>
+        <td class="col-1">
+            Get the <b>team</b> rank by team id<br/>
+            Ranked by score
+        </td>
+        <td class="col-2">
+            <a href="/company/teams/rank?id=1">/company/teams/rank?id=1</a><br/>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,10 @@
+spring:
+  data:
+    redis:
+      host: redis
+  jackson:
+    serialization:
+      indent_output: true
+  output:
+    ansi:
+      enabled: always
